@@ -1,5 +1,5 @@
 
-- 👀 Hi, I’m @BZA02 
+- 👀 Hi, I’m BZA
 - I’m interested in coding, acoustics and audio in general
 - I’m currently learning and i want to drop stuff
 - Reach me on ig @bza.ptx 👀
