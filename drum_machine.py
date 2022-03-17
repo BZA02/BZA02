@@ -28,7 +28,7 @@ def randomVelocity():
     value = int (min + random_value * (max - min))
     return value
 
-triggers = [int(x) for x in input("Enter as many 1s as you want to create midi notes separate them with spaces:\n").split()]
+triggers = [int(x) for x in input("Enter as many 1s as you want to create midi notes, separate them with spaces:\n").split()]
 
 for x in triggers:
     if x == 1:
