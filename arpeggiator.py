@@ -44,16 +44,13 @@ if majororminor == 1:
     tonality = input("Select tonality Major:\nC\nG\nD\nA\nE\nB\nGb\nDb\nAb\nEb\nBb\nF\n")
     octave = int(input("Select octave for the fundamental note of your tonality:\nfrom -1 to 9\n"))
     fundamental = int(input("Select fundamental note:\n First: 1\n Second: 2\n Third: 3\n Fourth: 4\n Fifth: 5\n Sixth 6\n Seventh: 7\n"))
-    note = midinotesmajor[tonality][fundamental - 1] + (12 * (octave + 1))
-    listran = midinotesmajor[tonality]
+    note = midinotesmajor[tonality][fundamental - 1] + (12 * (octave + 1)
     print("Your dumbass note is: {}".format(list(midiNotes.keys())[list(midiNotes.values()).index(note)]))
 else:
     tonality = input("Select tonality Minor:\nAm\nEm\nBm\nF#m\nC#m\nG#m\nEbm\nBbm\nFm\nCm\nGm\nDm\n")
     octave = int(input("Select octave for the fundamental note for the arpeggio:\nfrom -1 to 9\n"))
     fundamental = int(input("Select fundamental note:\n First: 1\n Second: 2\n Third: 3\n Fourth: 4\n Fifth: 5\n Sixth 6\n Seventh: 7\n"))
     note = midinotesminor[tonality][fundamental - 1] + (12 * (octave + 1))
-    #Esto es una lista ahora esta ya la puedo llamar y esto es el problema
-    listran = midinotesminor[tonality]
     print("Your dumbass note is: {}".format(list(midiNotes.keys())[list(midiNotes.values()).index(note)]))
 
 move = int( input("Select arpeggiator movement:\n Up and Down: 1\n Up: 2\n Down: 3\n Random: 4\n"))
@@ -112,8 +109,6 @@ elif move == 4:
     stuff = randomnotes
     i = 0 
     start = 0
-
-#Agregar random velocity 
 
 for x in stuff:
     midiFile.addNote(0, 0, array[i], start, rate, 100)
